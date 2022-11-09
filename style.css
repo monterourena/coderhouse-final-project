@@ -1,0 +1,90 @@
+/*init*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0913;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*Logo Size*/
+
+.logo {
+  height: 30px;
+  cursor: pointer;
+}
+
+/*Navigation Bar*/
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #ccf7c1;
+}
+
+.nav-button-outlined {
+  padding: 9px 25px;
+  margin: 10px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  transition: all 0.3 ease 0s;
+}
+
+.nav-button {
+  padding: 9px 25px;
+  margin: 10px;
+
+  background: rgb(70, 175, 167);
+  background: linear-gradient(
+    90deg,
+    rgb(47, 138, 130) 0%,
+    rgb(43, 131, 102) 35%,
+    rgb(82, 167, 127) 100%
+  );
+
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3 ease 0s;
+}
+
+/*Text Styling*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+.title {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
