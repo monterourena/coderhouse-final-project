@@ -8,73 +8,218 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
+  <body class="body--bg">
+    <header class="header">
+      <nav class="navbar" id="navigation_bar">
+        <div class="navbar__logo">
+          <img
+            class="navbar__logo--img"
+            src="./assets/home_page/navbar-logo.png"
+            alt="befit-logo"
+          />
+        </div>
 
-  <body class="body-bg">
-    <header class="navbar">
-
-      <div class="navbar__logo">
-        <img class="navbar__logo--img" src="./assets/home_page/navbar-logo.png" alt="befit-logo" />
-      </div>
-
-      <div class="navbar__links">
-        <nav>
+        <div class="navbar__links">
           <ul class="navbar__links--list">
             <li><a href="#"> Fitness Center </a></li>
             <li><a href="#"> Personal Trainer </a></li>
             <li><a href="#"> Nutrition Coach </a></li>
           </ul>
-        </nav>
-      </div>
-        
-      <div class="button">
-        <a class="button--outlined" href="#">Pricing</a>
-        <a class="button--gradient" href="#">About us</a>
-      </div>
+        </div>
 
+        <div class="button">
+          <a class="button--outlined" href="#">Pricing</a>
+          <a class="button--gradient" href="#">About us</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-      <section class="hero">
-        <p class="hero__title text--centered mt-2 mb-2 mh-4">
+      <section class="hero--main">
+        <p class="title centered mt-2 mb-2 mh-4">
           Customer engagement has never been so good
         </p>
-        <p class="hero__description text--centered mt-3 mb-2 mh-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        <p class="description centered mt-3 mb-2 mh-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
         </p>
 
-        <div class="button text--centered mt-3 mb-2">
+        <div class="button centered mt-3 mb-2">
           <a class="button--gradient" href="#">Join us</a>
         </div>
 
         <div class="hero__placeholder mt-3 mb-3">
-          <img class="hero__placeholder--large" src="./assets/home_page/main_hero_mockup.png" alt="">
+          <img
+            class="large"
+            src="./assets/home_page/main_hero_mockup.png"
+            alt=""
+          />
         </div>
-        
       </section>
 
-      <section class="hero">
-        <p class="hero__title text--centered mt-5 mb-2 mh-3">
-          More than 3000 professionals and companies worldwide have trusted us to grown their business
+      <section class="hero--customers">
+        <p class="title centered mt-5 mb-2 mh-3">
+          More than 3000 professionals and companies worldwide have trusted us
+          to grown their business
         </p>
-        <p class="hero__description text--centered mt-3 mb-2 mh-4">
-          Become one of them and deliver world-class service to your customers. We invite you to learn about the success stories of our partners
+        <p class="description centered mt-3 mb-2 mh-4">
+          Become one of them and deliver world-class service to your customers.
+          We invite you to learn about the success stories of our partners
         </p>
 
-        <div class="button text--centered mt-3 mb-2">
+        <div class="button centered mt-3 mb-2">
           <a class="button--gradient" href="#">I want to join</a>
         </div>
 
         <div class="hero__placeholder mt-3 mb-3">
-          <img class="hero__placeholder--extra-large" src="./assets/home_page/partners_hero.png" alt="">
+          <img
+            class="large zoomable"
+            src="./assets/home_page/partners_hero.png"
+            alt=""
+          />
         </div>
-        
       </section>
 
+      <section class="hero--branded-apps">
+        <p class="title centered mt-4 mb-2 mh-3">
+          We empower companies to create high impact through their brand
+        </p>
+        <p class="description centered mt-3 mb-2 mh-4">
+          We offer custom branded applications which are white-labeled web
+          services and mobile apps, powered by Befit and personalized for your
+          fitness business
+        </p>
+
+        <div class="hero_slider mt-3 mb-2 mh-2">
+          <div class="slider_child mh-1">
+            <p class="subtitle">That's what we call the WOW factor</p>
+
+            <p class="description">
+              From app icons, to color themes, integrations, widgets, and more:
+              find the level of customization that's right for you. With three
+              different app types to choose from, there's a branded app for
+              every business
+            </p>
+
+            <div class="button mt-3 mb-2">
+              <a class="button--gradient" href="#">Get started</a>
+            </div>
+          </div>
+
+          <div class="slider_child mh-1">
+            <img
+              class="medium"
+              src="./assets/home_page/custom_branded_apps.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="faq mh-3">
+        <p class="title centered mt-4 mb-2 mh-3">FAQs</p>
+        <div class="faq-container">
+          <div class="faq__item">
+            <button id="faq__item--button-0" aria-expanded="false">
+              <span class="faq__item--title">
+                What is a custom branded application?</span
+              >
+              <span class="icon"></span>
+            </button>
+            <div class="faq__item--content">
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                eius nemo nulla accusantium similique architecto veniam ducimus
+                id odio exercitationem molestiae, vitae aspernatur obcaecati
+                asperiores tenetur repudiandae dolore provident porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button id="faq__item--button-1" aria-expanded="false">
+              <span class="faq__item--title">
+                How much does this app cost?</span
+              >
+              <span class="icon"></span>
+            </button>
+            <div class="faq__item--content">
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                eius nemo nulla accusantium similique architecto veniam ducimus
+                id odio exercitationem molestiae, vitae aspernatur obcaecati
+                asperiores tenetur repudiandae dolore provident porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button id="faq__item--button-2" aria-expanded="false">
+              <span class="faq__item--title">
+                What does the service includes?</span
+              >
+              <span class="icon"></span>
+            </button>
+            <div class="faq__item--content">
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                eius nemo nulla accusantium similique architecto veniam ducimus
+                id odio exercitationem molestiae, vitae aspernatur obcaecati
+                asperiores tenetur repudiandae dolore provident porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button id="faq__item--button-3" aria-expanded="false">
+              <span class="faq__item--title">
+                Is it available on iOS and Android?</span
+              >
+              <span class="icon"></span>
+            </button>
+            <div class="faq__item--content">
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                eius nemo nulla accusantium similique architecto veniam ducimus
+                id odio exercitationem molestiae, vitae aspernatur obcaecati
+                asperiores tenetur repudiandae dolore provident porro.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="button centered mt-3 mb-2">
+          <a class="button--outlined" href="#">Learn more</a>
+        </div>
+      </section>
+
+      <section class="CTA mt-5 mb-5">
+        <p class="title centered mt-4 mb-2 mh-3">
+          Don't miss any news about our services
+        </p>
+        <p class="description centered mt-3 mb-2 mh-4">
+          Be part of our exclusive newsletter where we publish the latest offers
+          and news about Befit products
+        </p>
+
+      
+        <form class="CTA_form mt-3 mb-2" action="">
+          <input class="form_text--email" type="email" id="email_form" placeholder="Enter your email here">
+          <input class="form_text--button" type="submit" value="Subscribe">
+        </form>
 
 
+
+
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+
+
+    </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
