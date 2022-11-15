@@ -14,7 +14,7 @@
         <div class="navbar__logo">
           <img
             class="navbar__logo--img"
-            src="./assets/home_page/navbar-logo.png"
+            src="./assets/navbar-logo.png"
             alt="befit-logo"
           />
         </div>
@@ -37,7 +37,8 @@
     <main>
       <section class="hero--main">
         <p class="title centered mt-2 mb-2 mh-4">
-          Customer engagement has never been so good
+          <span class="highlight"> Customer</span> engagement has never been so
+          good
         </p>
         <p class="description centered mt-3 mb-2 mh-3">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -60,8 +61,8 @@
 
       <section class="hero--customers">
         <p class="title centered mt-5 mb-2 mh-3">
-          More than 3000 professionals and companies worldwide have trusted us
-          to grown their business
+          More than <span class="highlight">3000 professionals</span> and
+          companies worldwide have trusted us to grown their business
         </p>
         <p class="description centered mt-3 mb-2 mh-4">
           Become one of them and deliver world-class service to your customers.
@@ -83,7 +84,8 @@
 
       <section class="hero--branded-apps">
         <p class="title centered mt-4 mb-2 mh-3">
-          We empower companies to create high impact through their brand
+          We <span class="highlight">empower</span> companies to create high
+          impact through <span class="highlight">their brand</span>
         </p>
         <p class="description centered mt-3 mb-2 mh-4">
           We offer custom branded applications which are white-labeled web
@@ -193,30 +195,42 @@
           <a class="button--outlined" href="#">Learn more</a>
         </div>
       </section>
-
-      <section class="CTA mt-5 mb-5">
-        <p class="title centered mt-4 mb-2 mh-3">
-          Don't miss any news about our services
-        </p>
-        <p class="description centered mt-3 mb-2 mh-4">
-          Be part of our exclusive newsletter where we publish the latest offers
-          and news about Befit products
-        </p>
-
-      
-        <form class="CTA_form mh-3 mt-3 mb-2" action="">
-          <input class="form_text--email" type="email" id="email_form" placeholder="Enter your email here">
-          <input class="form_text--button" type="submit" value="Subscribe">
-        </form>
-
-
-
-
-      </section>
     </main>
 
-    <footer>
+    <footer class="footer mt-5">
+      <div class="footer-navigation mt-3">
+        <img
+          class="tiny"
+          src="./assets/navbar-logo.png"
+          alt="befit-logo"
+        />
 
+        <ul class="footer-links__list">
+          <li class="footer-links__item centered">
+            <a href="#">Fitness Center</a>
+          </li>
+          <li class="footer-links__item centered">
+            <a href="#">Personal Trainer</a>
+          </li>
+          <li class="footer-links__item centered">
+            <a href="#">Nutrition Coach</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-CTA">
+        <p class="subtitle centered">Don't miss any news <span class="highlight">about our services</span></p>
+
+        <form class="CTA_form mb-3" action="">
+          <input
+            class="form_text--email"
+            type="email"
+            id="email_form"
+            placeholder="Enter your email here"
+          />
+          <input class="form_text--button" type="submit" value="Subscribe" />
+        </form>
+      </div>
     </footer>
 
     <script src="./main.js"></script>

@@ -1,16 +1,15 @@
-const items = document.querySelectorAll('.faq-container button');
+const items = document.querySelectorAll(".faq-container button");
 
 function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
+  const itemToggle = this.getAttribute("aria-expanded");
 
   for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
+    items[i].setAttribute("aria-expanded", "false");
   }
 
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
+  if (itemToggle == "false") {
+    this.setAttribute("aria-expanded", "true");
   }
 }
 
-items.forEach((item) => item.addEventListener('click', toggleAccordion));
-
+items.forEach((item) => item.addEventListener("click", toggleAccordion));
