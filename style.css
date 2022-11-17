@@ -71,6 +71,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
+  text-justify: inter-word;
 }
 
 .note {
@@ -78,6 +79,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  text-justify: inter-word;
 }
 
 .highlight {
@@ -187,6 +189,10 @@ img.zoomable:hover {
   text-align: center;
 }
 
+.rounded-corners {
+  border-radius: 3em;
+}
+
 /*Spacing*/
 
 .mb-6 {
@@ -257,6 +263,7 @@ img.zoomable:hover {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 10px;
   margin-left: 30px;
   margin-right: 30px;
@@ -313,13 +320,15 @@ img.zoomable:hover {
 
 .button--gradient {
   padding: 9px 25px;
-  margin: 10px;
-
   background: #46afa7;
   background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%);
-
+  margin: 10px;
   border: none;
   border-radius: 50px;
+}
+
+.button--nomarging {
+  margin: 0;
 }
 
 /* BUTTON ANIMATION */
@@ -501,4 +510,49 @@ img.zoomable:hover {
 .footer-links__list li {
   list-style: none;
   margin: 10px 0px;
+}
+
+/*---------------------- FITNESS CENTER PAGE -----------------------------*/
+
+.tiles__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 50px;
+}
+
+.tiles__cards--three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 50px;
+}
+
+.card {
+  background-color: rgba(209, 209, 209, 0.1);
+  padding: 1em 3em;
+  border-radius: 1em;
+}
+
+/*---------------------- PRICING -----------------------------*/
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0em 2em;
+}
+
+.pricing-cards__item {
+  background-color: rgba(209, 209, 209, 0.1);
+  padding: 1em 3em;
+  border-radius: 1em;
+}
+
+.pricing-cards__item--cost {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid white;
+}
+
+.item-cost__child {
+  align-self: center;
+  margin: 0 10px 50px 0px;
 }
