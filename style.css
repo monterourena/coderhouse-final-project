@@ -157,14 +157,6 @@ body {
 
 /* IMAGES & SIZES */
 
-img.zoomable {
-  transition: transform 2s;
-}
-
-img.zoomable:hover {
-  transform: scale(1.1);
-}
-
 .tiny {
   width: 100px;
 }
