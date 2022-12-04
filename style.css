@@ -271,7 +271,7 @@ body {
 /* Se genera el layout general del Navbar */
 .navbar {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: repeat(3,1fr);
 
   align-items: center;
   padding: 30px 10px;
