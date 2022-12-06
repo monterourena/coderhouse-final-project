@@ -517,14 +517,28 @@ body {
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0em 2em;
+  grid-template-areas: 
+  'one two'
+  'three three';
+  gap: 2em 2em;
 }
 
 .pricing-cards__item {
   background-color: rgba(209, 209, 209, 0.1);
   padding: 1em 3em;
   border-radius: 1em;
+}
+
+.pricing-cards__item--one {
+  grid-area: one;
+}
+
+.pricing-cards__item--two {
+  grid-area: two;
+}
+
+.pricing-cards__item--three {
+  grid-area: three;
 }
 
 .pricing-cards__item--cost {
@@ -612,6 +626,15 @@ body {
     text-align: center;
   }
 
+  /* ----------- Pricing -----------  */
+  .pricing-cards {
+    display: grid;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+    gap: 2em 2em;
+  }
 }
 
 /* ------------------------------------------------------------------ */
