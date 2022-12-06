@@ -1,3 +1,8 @@
+/* ------------------------------------------------------------------ */
+/* -------------------- DISEÑO GENERAL DESKTOP ---------------------- */
+/* ------------------------------------------------------------------ */
+
+
 /*---------------------- EXTERNAL ASSETS -----------------------------*/
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
@@ -293,9 +298,15 @@ body {
 
 }
 
+
+.navbar__links--list li{
+  margin: 10px;
+}
+
 .navbar__button{
   justify-self: right;
   display: block;
+  min-width: 280px;
 }
 
 .navbar__button--hamburger{
@@ -310,7 +321,6 @@ body {
   height: 30px;
   cursor: pointer;
 }
-
 
 
 
@@ -522,4 +532,40 @@ body {
 .item-cost__child {
   align-self: center;
   margin: 0 10px 50px 0px;
+}
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px){
+
+  .navbar__button--hamburger{
+    display: block;
+  }
+  .navbar__button{
+    display: none;
+  }
+
+
+}
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY MOBILE ------------------------ */
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 576px){
+  .navbar{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .navbar__links{
+    display: none;
+  }
+
 }
