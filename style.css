@@ -177,23 +177,29 @@ body {
 /* IMAGES & SIZES */
 
 .tiny {
-  width: 100px;
+  width: 80%;
+  max-width: 100px;
 }
 
 .extra-small {
-  width: 200px;
+  width: 80%;
+  max-width: 200px;
 }
 .small {
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
 }
 .medium {
-  width: 800px;
+  width: 80%;
+  max-width: 100%;
 }
 .large {
-  width: 1000px;
+  width: 80%;
+  max-width: 1000px;
 }
 .extra-large {
-  width: 1500px;
+  width: 80%;
+  max-width: 1500px;
 }
 
 .centered {
@@ -253,8 +259,8 @@ body {
   margin-right: 40%;
 }
 .margin-horizontal-4 {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 24%;
+  margin-right: 24%;
 }
 .margin-horizontal-3 {
   margin-left: 20%;
@@ -402,9 +408,14 @@ body {
 /*---------------------- HERO -----------------------------*/
 
 .hero_slider {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  flex-wrap: wrap;
 }
+
+
+
 
 .hero__placeholder {
   display: flex;
@@ -562,7 +573,42 @@ body {
   }
 
 
+  /* Spacing */
+  .margin-horizontal-6 {
+    margin-left: 42%;
+    margin-right: 42%;
+  }
+  .margin-horizontal-5 {
+    margin-left: 24%;
+    margin-right: 24%;
+  }
+  .margin-horizontal-4 {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .margin-horizontal-3 {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .margin-horizontal-2 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .margin-horizontal-1 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+
     /* ---------- index.HTML --------- */
+
+  .hero_slider {
+    display: grid;
+    grid-template-columns: none ;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
 
 }
@@ -585,24 +631,53 @@ body {
   }
 
   .title {
-    font-size: 40px;
+    font-size: 44px;
   }
   
   .subtitle {
-    font-size: 30px;
+    font-size: 34px;
   }
   
   .subsubtitle {
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .description {
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .note {
     font-size: 12px;
   }
+
+  
+  /* Spacing */
+  .margin-horizontal-6 {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  .margin-horizontal-5 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .margin-horizontal-4 {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .margin-horizontal-3 {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .margin-horizontal-2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .margin-horizontal-1 {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
 
   /* ---------- index.HTML --------- */
 
