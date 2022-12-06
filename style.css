@@ -498,7 +498,7 @@ body {
 .tiles__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px 50px;
+  gap: 30px 30px;
 }
 
 .tiles__cards--three-columns {
@@ -659,6 +659,12 @@ body {
     display: grid;
     grid-template-areas: 'one' 'two' 'three';
     gap: 50px 50px;
+  }
+
+  .tiles__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 30px;
   }
 }
 
