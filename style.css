@@ -301,6 +301,7 @@ body {
 
 .navbar__links--list li {
   margin: 10px;
+  list-style-type: none;
 }
 
 .navbar__button {
