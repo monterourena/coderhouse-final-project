@@ -503,8 +503,20 @@ body {
 
 .tiles__cards--three-columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'one two' 'three three';
   gap: 50px 50px;
+}
+
+.tile-card--one{
+  grid-area: one;
+}
+
+.tile-card--two{
+  grid-area: two;
+}
+
+.tile-card--three{
+  grid-area: three;
 }
 
 .card {
@@ -551,6 +563,12 @@ body {
   align-self: center;
   margin: 0 10px 50px 0px;
 }
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------ */
 /* ---------------------- MEDIA QUERY TABLET ------------------------ */
@@ -626,7 +644,7 @@ body {
     text-align: center;
   }
 
-  /* ----------- Pricing -----------  */
+  /* ----------- PRICING -----------  */
   .pricing-cards {
     display: grid;
     grid-template-areas: 
@@ -634,6 +652,13 @@ body {
     'two'
     'three';
     gap: 2em 2em;
+  }
+
+  /* ----------- NUTRITION COACH -----------  */
+  .tiles__cards--three-columns {
+    display: grid;
+    grid-template-areas: 'one' 'two' 'three';
+    gap: 50px 50px;
   }
 }
 
