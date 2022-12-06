@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Befit - Pricing</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
   </head>
 
   <body class="body--bg">
     <header class="header">
+
+      <!-- Inicio del navigation bar -->
       <nav class="navbar" id="navigation_bar">
+        <!-- Inicio de la sección del logo -->
         <div class="navbar__logo">
           <a href="./index.html">
             <img
@@ -20,7 +24,10 @@
             />
           </a>
         </div>
+        <!-- Fin de la sección del logo -->
 
+
+        <!-- Inicio de la sección de los links -->
         <div class="navbar__links">
           <ul class="navbar__links--list">
             <li>
@@ -34,38 +41,51 @@
             </li>
           </ul>
         </div>
+        <!-- Fin de la sección de los links -->
 
-        <div class="button">
+
+        <!-- Inicio de la sección de los botones Call To Action -->
+        <div class="navbar__button">
           <a class="button--outlined" href="./pricing.html">Pricing</a>
           <a class="button--gradient" href="./about-us.html">About us</a>
         </div>
+        <!-- Fin de la sección de los botones Call To Action -->
+
+        <!-- Inicio del Hamburger Menu -->
+        <div class="navbar__button--hamburger">
+          <button class="button--hamburger" href="./index.html"><span class="material-icons-outlined hamburger-icon">menu</span></button>
+        </div>
+        <!-- Fin del Hamburger Menu -->
+
       </nav>
+      <!-- Fin del navigation bar -->
+
     </header>
 
     <section>
-      <p class="title centered mt-3 mb-2 mh-3">
+      <p class="title centered margin-top-3 margin-bottom-2 margin-horizontal-3">
         Choose your <span class="highlight">plan</span>
       </p>
-      <p class="description centered mt-3 mb-2 mh-4">
+      <p class="description centered margin-top-3 margin-bottom-2 margin-horizontal-4">
         We prepared three flexible plans to choose from. It will depend on the
         type of customer you are targeting and the number of clients you have.
       </p>
     </section>
 
-    <article class="pricing-cards mt-4 mh-3">
-      <div class="pricing-cards__item">
+    <article class="pricing-cards margin-top-4 margin-horizontal-2">
+      <div class="pricing-cards__item pricing-cards__item--one">
         <p class="title">Basic<br />Plan</p>
         <div class="pricing-cards__item--cost">
           <p class="item-cost__child title">$49</p>
           <p class="item-cost__child subsubtitle">per 100 user monthly</p>
         </div>
 
-        <p class="note mt-3">
+        <p class="note margin-top-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam
           assumenda eum vitae! Eligendi praesentium magni expedita molestiae
         </p>
 
-        <div class="button mt-4 mb-4">
+        <div class="button margin-top-4 margin-bottom-4">
           <a
             class="button--outlined button--nomarging"
             href="mailto:contact@befit.com"
@@ -74,19 +94,19 @@
           </a>
         </div>
       </div>
-      <div class="pricing-cards__item">
+      <div class="pricing-cards__item pricing-cards__item--two">
         <p class="title">Pro<br />Plan</p>
         <div class="pricing-cards__item--cost">
           <p class="item-cost__child title">$79</p>
           <p class="item-cost__child subsubtitle">per 100 user monthly</p>
         </div>
 
-        <p class="note mt-3">
+        <p class="note margin-top-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam
           assumenda eum vitae! Eligendi praesentium magni expedita molestiae
         </p>
 
-        <div class="button mt-4 mb-4">
+        <div class="button margin-top-4 margin-bottom-4">
           <a
             class="button--outlined button--nomarging"
             href="mailto:contact@befit.com"
@@ -95,19 +115,19 @@
           </a>
         </div>
       </div>
-      <div class="pricing-cards__item">
+      <div class="pricing-cards__item pricing-cards__item--three">
         <p class="title">Premium<br />Plan</p>
         <div class="pricing-cards__item--cost">
           <p class="item-cost__child title">$99</p>
           <p class="item-cost__child subsubtitle">per 100 user monthly</p>
         </div>
 
-        <p class="note mt-3">
+        <p class="note margin-top-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam
           assumenda eum vitae! Eligendi praesentium magni expedita molestiae
         </p>
 
-        <div class="button mt-4 mb-4">
+        <div class="button margin-top-4 margin-bottom-4">
           <a
             class="button--outlined button--nomarging"
             href="mailto:contact@befit.com"
@@ -118,8 +138,8 @@
       </div>
     </article>
 
-    <footer class="footer mt-5">
-      <div class="footer-navigation mt-3">
+    <footer class="footer margin-top-5">
+      <div class="footer-navigation margin-top-3">
         <a href="./index.html">
           <img class="tiny" src="./assets/navbar-logo.png" alt="befit-logo" />
         </a>
@@ -142,7 +162,7 @@
           Don't miss any news <span class="highlight">about our services</span>
         </p>
 
-        <form class="CTA_form mb-3" action="">
+        <form class="CTA_form margin-bottom-3" action="">
           <input
             class="form_text--email"
             type="email"
