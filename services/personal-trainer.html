@@ -7,6 +7,7 @@
     <title>Befit - Personal Trainer Services</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="body--bg">
@@ -64,7 +65,7 @@
 
     <section class="hero--fitness-center">
       <div class="hero_slider margin-top-2 margin-bottom-2 margin-horizontal-2">
-        <div class="slider_child margin-horizontal-1">
+        <div class="slider_child margin-horizontal-1" data-aos="fade-right">
           <p class="title margin-top-2">
             Be the personal trainer
             <span class="highlight">every client</span> wants
@@ -84,6 +85,7 @@
 
         <div class="slider_child--image margin-horizontal-1">
           <img
+            data-aos="fade-left"
             class="medium"
             src="../assets/personal_trainer/personal_trainer_app.png"
             alt=""
@@ -127,5 +129,10 @@
         </form>
       </div>
     </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

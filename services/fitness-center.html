@@ -7,6 +7,7 @@
     <title>Befit - Fitness Center Services</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="body--bg">
@@ -66,13 +67,14 @@
       <div class="hero_slider--inverted margin-top-2 margin-bottom-2 margin-horizontal-2">
         <div class="slider_child--image margin-horizontal-1">
           <img
+            data-aos="fade-up"
             class="medium rounded-corners"
             src="../assets/fitness_center/fitness_center_main.jpg"
             alt=""
           />
         </div>
 
-        <div class="slider_child margin-horizontal-1">
+        <div class="slider_child margin-horizontal-1" data-aos="fade-up">
           <p class="title margin-top-2">
             Let's see our features! Do it all whith
             <span class="highlight">Befit </span>
@@ -95,7 +97,7 @@
 
     <section class="tiles">
       <article class="tiles__cards margin-top-4 margin-horizontal-2">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="" alt="" />
           <p class="subtitle">Personalized Fitness Services</p>
           <p class="note margin-bottom-3">
@@ -104,7 +106,7 @@
             features.
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="" alt="" />
           <p class="subtitle">Custom Branded Apps</p>
           <p class="note margin-bottom-3">
@@ -112,7 +114,7 @@
             packed with Befit features but wrapped in your business branding
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="" alt="" />
           <p class="subtitle">Next-Level Engagement</p>
           <p class="note margin-bottom-3">
@@ -121,7 +123,7 @@
             call features.
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="" alt="" />
           <p class="subtitle">Group Training</p>
           <p class="note margin-bottom-3">
@@ -168,5 +170,9 @@
         </form>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
