@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Befit - Solutions for helthcare professionals</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="body--bg">
     <header class="header">
-
       <!-- Inicio del navigation bar -->
       <nav class="navbar" id="navigation_bar">
         <!-- Inicio de la sección del logo -->
@@ -25,7 +28,6 @@
           </a>
         </div>
         <!-- Fin de la sección del logo -->
-
 
         <!-- Inicio de la sección de los links -->
         <div class="navbar__links">
@@ -43,7 +45,6 @@
         </div>
         <!-- Fin de la sección de los links -->
 
-
         <!-- Inicio de la sección de los botones Call To Action -->
         <div class="navbar__button">
           <a class="button--outlined" href="./pricing.html">Pricing</a>
@@ -53,28 +54,32 @@
 
         <!-- Inicio del Hamburger Menu -->
         <div class="navbar__button--hamburger">
-          <button class="button--hamburger" href="./index.html"><span class="material-icons-outlined hamburger-icon">menu</span></button>
+          <button class="button--hamburger" href="./index.html">
+            <span class="material-icons-outlined hamburger-icon">menu</span>
+          </button>
         </div>
         <!-- Fin del Hamburger Menu -->
-
       </nav>
       <!-- Fin del navigation bar -->
-
     </header>
 
     <main>
-
       <!-- Inicio de sección 1 -->
       <section class="hero--main">
-
         <!-- Titulo Principal -->
-        <p class="title centered margin-top-2 margin-bottom-2 margin-horizontal-4">
+        <p
+          class="title centered margin-top-2 margin-bottom-2 margin-horizontal-4"
+          data-aos="fade-up"
+        >
           <span class="highlight"> Customer</span> engagement has never been so
           good
         </p>
 
         <!-- Descripción -->
-        <p class="description centered margin-top-3 margin-bottom-2 margin-horizontal-3">
+        <p
+          class="description centered margin-top-3 margin-bottom-2 margin-horizontal-3"
+          data-aos="fade-up"
+        >
           Keep clients, trainers and programming in one place and streamline
           your business operations. With integrated payments, appointments, and
           one-click automation you can sell and market our services and PT
@@ -82,7 +87,7 @@
         </p>
 
         <!-- Botón CTA -->
-        <div class="button centered margin-top-3 margin-bottom-2">
+        <div class="button centered margin-top-3 margin-bottom-2" data-aos="fade-up">
           <a class="button--gradient" href="./pricing.html">Join us</a>
         </div>
 
@@ -90,6 +95,9 @@
         <div class="hero__placeholder margin-top-3 margin-bottom-3">
           <img
             class="large"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800"
             src="./assets/home_page/main_hero_mockup.png"
             alt=""
           />
@@ -98,16 +106,20 @@
       <!-- Fin de sección 1 -->
 
       <!-- Inicio de sección 2 -->
-      <section class="hero--customers">
-
+      <section class="hero--customers" data-aos="fade-up">
         <!-- Titulo Principal -->
-        <p class="title centered margin-top-5 margin-bottom-2 margin-horizontal-3">
+        <p
+          class="title centered margin-top-5 margin-bottom-2 margin-horizontal-3"
+        >
           More than 3000 <span class="highlight">professionals</span> and
-          companies worldwide have trusted us to <span class="highlight">grown</span> their business
+          companies worldwide have trusted us to
+          <span class="highlight">grown</span> their business
         </p>
 
         <!-- Descripción -->
-        <p class="description centered margin-top-3 margin-bottom-2 margin-horizontal-4">
+        <p
+          class="description centered margin-top-3 margin-bottom-2 margin-horizontal-4"
+        >
           Become one of them and deliver world-class service to your customers.
           We invite you to learn about the success stories of our partners
         </p>
@@ -120,36 +132,46 @@
         <!-- Hero Image -->
         <div class="hero__placeholder margin-top-3 margin-bottom-3">
           <img
-            class="large "
+            class="large"
             src="./assets/home_page/partners_hero.png"
             alt=""
           />
         </div>
       </section>
       <!-- Fin de sección 2 -->
-      
+
       <!-- Inicio de sección 3 -->
       <section class="hero--branded-apps">
-
         <!-- Titulo Principal -->
-        <p class="title centered margin-top-4 margin-bottom-2 margin-horizontal-3">
+        <p
+          class="title centered margin-top-4 margin-bottom-2 margin-horizontal-3"
+          data-aos="fade-up"
+        >
           We <span class="highlight">empower</span> companies to create high
           impact through <span class="highlight">their brand</span>
         </p>
 
         <!-- Descripción Principal-->
-        <p class="description centered margin-top-3 margin-bottom-2 margin-horizontal-4">
+        <p
+          class="description centered margin-top-3 margin-bottom-2 margin-horizontal-4"
+          data-aos="fade-up"
+        >
           We offer custom branded applications which are white-labeled web
           services and mobile apps, powered by Befit and personalized for your
           fitness business
         </p>
-        
+
         <!-- Hero Secundario -->
-        <div class="hero_slider margin-top-3 margin-bottom-2 margin-horizontal-2">
-
+        <div
+          class="hero_slider margin-top-3 margin-bottom-2 margin-horizontal-2"
+        >
           <!-- Inicio del Contenedor Izquierdp -->
-          <div class="slider_child margin-horizontal-1">
-
+          <div
+            class="slider_child margin-horizontal-1"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800"
+          >
             <!-- Titulo Secundario -->
             <p class="subtitle">That's what we call the WOW factor</p>
 
@@ -172,27 +194,30 @@
           <div class="slider_child--image margin-horizontal-1">
             <img
               class="medium"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
               src="./assets/home_page/custom_branded_apps.png"
               alt=""
             />
           </div>
           <!-- Fin de Hero Image Derecha-->
-
         </div>
         <!-- Fin del Hero Secundario -->
-
       </section>
       <!-- Fin de sección 3 -->
 
       <!-- Inicio de sección de preguntas frecuentes -->
       <section class="faq margin-horizontal-3">
-
         <!-- Título Principal -->
-        <p class="title centered margin-top-4 margin-bottom-2 margin-horizontal-3">FAQs</p>
+        <p
+          class="title centered margin-top-4 margin-bottom-2 margin-horizontal-3"
+        >
+          FAQs
+        </p>
 
         <!-- Inicio de Lista de preguntas -->
         <div class="faq-container">
-
           <!-- Inicio de Pregunta -->
           <div class="faq__item">
             <button id="faq__item--button-0" aria-expanded="false">
@@ -236,7 +261,6 @@
             </button>
           </div>
           <!-- Fin de Pregunta -->
-
         </div>
         <!-- Finde Lista de preguntas -->
 
@@ -245,10 +269,8 @@
           <a class="button--outlined" href="./about-us.html">Learn more</a>
         </div>
         <!-- Fin de Botón CTA -->
-
       </section>
       <!-- Fin de sección de preguntas frecuentes -->
-      
     </main>
 
     <!-- Inicio del Footer -->
@@ -289,5 +311,9 @@
     </footer>
     <!-- Fin del Footer -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

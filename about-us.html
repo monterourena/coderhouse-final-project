@@ -7,6 +7,7 @@
     <title>Befit - About us</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="body--bg">
@@ -66,13 +67,14 @@
       <div class="hero_slider--inverted margin-top-4 margin-bottom-2 margin-horizontal-1">
         <div class="slider_child--image margin-horizontal-1">
           <img
+            data-aos="fade-right"
             class="medium rounded-corners"
             src="./assets/about_us/cover-about-us.jpg"
             alt=""
           />
         </div>
 
-        <div class="slider_child margin-horizontal-1">
+        <div class="slider_child margin-horizontal-1" data-aos="fade-left">
           <p class="title margin-top-2">
             Our client's success inspires every decision
             <span class="highlight">we make</span>
@@ -131,5 +133,10 @@
         </form>
       </div>
     </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
