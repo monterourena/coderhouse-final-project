@@ -1,0 +1,139 @@
+/* IMAGES & SIZES */
+
+/* Clases para definir tamaños máximos de imágenes */
+
+.tiny {
+  width: 80%;
+  max-width: 100px;
+}
+
+.extra-small {
+  width: 80%;
+  max-width: 200px;
+}
+.small {
+  width: 80%;
+  max-width: 500px;
+}
+.medium {
+  width: 80%;
+  max-width: 100%;
+}
+.large {
+  width: 80%;
+  max-width: 1000px;
+}
+.extra-large {
+  width: 80%;
+  max-width: 1500px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.rounded-corners {
+  border-radius: 3em;
+}
+
+/*Spacing*/
+/* Definición de clases para margenes superiores, inferiores y laterales */
+
+.margin-bottom-6 {
+  margin-bottom: 400px;
+}
+.margin-bottom-5 {
+  margin-bottom: 200px;
+}
+.margin-bottom-4 {
+  margin-bottom: 100px;
+}
+.margin-bottom-3 {
+  margin-bottom: 50px;
+}
+.margin-bottom-2 {
+  margin-bottom: 25px;
+}
+.margin-bottom-1 {
+  margin-bottom: 10px;
+}
+
+.margin-top-6 {
+  margin-top: 400px;
+}
+.margin-top-5 {
+  margin-top: 200px;
+}
+.margin-top-4 {
+  margin-top: 100px;
+}
+.margin-top-3 {
+  margin-top: 50px;
+}
+.margin-top-2 {
+  margin-top: 25px;
+}
+.margin-top-1 {
+  margin-top: 10px;
+}
+
+.margin-horizontal-6 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.margin-horizontal-5 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.margin-horizontal-4 {
+  margin-left: 24%;
+  margin-right: 24%;
+}
+.margin-horizontal-3 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.margin-horizontal-2 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.margin-horizontal-1 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+  .margin-top-4 {
+    margin-top: 50px;
+  }
+
+  /* Spacing */
+  .margin-horizontal-6 {
+    margin-left: 42%;
+    margin-right: 42%;
+  }
+  .margin-horizontal-5 {
+    margin-left: 24%;
+    margin-right: 24%;
+  }
+  .margin-horizontal-4 {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .margin-horizontal-3 {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .margin-horizontal-2 {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .margin-horizontal-1 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

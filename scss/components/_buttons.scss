@@ -1,0 +1,59 @@
+/*---------------------- BUTTONS -----------------------------*/
+
+/* BUTTON GENERAL STYLE */
+.button--outlined {
+  padding: 9px 25px;
+  margin: 10px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  transition: all 0.3 ease 0s;
+}
+
+.button--gradient {
+  padding: 9px 25px;
+  background: #46afa7;
+  background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%);
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+}
+
+/* Botón de menu de hamburguesa */
+.button--hamburger {
+  padding: 9px 25px;
+  margin: 10px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  transition: all 0.3 ease 0s;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.button--nomarging {
+  margin: 0;
+}
+
+/* BUTTON ANIMATION */
+.button a,
+.navbar__button a {
+  transition: all 0.3 ease 0s;
+}
+
+.button a:hover,
+.navbar__button a:hover {
+  background: #ccf7c1;
+  color: #0a0913;
+}
+
+/* BUTTON TEXT */
+.button a,
+.navbar__button a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
