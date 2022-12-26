@@ -1,0 +1,22 @@
+{
+  "name": "coderhouse-final-project",
+  "version": "1.0.0",
+  "description": "SASS Project",
+  "main": "index.js",
+  "scripts": {
+    "build-sass":"node-sass --include-path scss scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://monterourena@github.com/monterourena/coderhouse-final-project.git"
+  },
+  "author": "Jose David Montero Ureña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monterourena/coderhouse-final-project/issues"
+  },
+  "homepage": "https://github.com/monterourena/coderhouse-final-project#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
