@@ -12,3 +12,14 @@
   border-radius: $borderradius;
   background: $background;
 }
+
+@mixin fontAndTransitionButton{
+  transition: all 0.3 ease 0s;
+  @include fontWeightAndSize(400,16px);
+  text-decoration: none;
+}
+
+@mixin hoverButton{
+  background: #ccf7c1;
+  color: #0a0913;
+}

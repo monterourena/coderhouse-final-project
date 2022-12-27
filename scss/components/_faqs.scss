@@ -1,13 +1,14 @@
 
 /*---------------------- FAQs -----------------------------*/
-.faq-container .faq__item {
+.faq-container {
+  .faq__item {
     background-color: rgba(73, 78, 76, 0.5);
     border-radius: 20px;
     padding: 0px 50px;
     margin: 20px 0px;
   }
-  
-  .faq-container button {
+
+  button {
     position: relative;
     display: block;
     text-align: left;
@@ -21,8 +22,11 @@
     outline: none;
   }
   
-  .faq-container button:hover,
-  .faq-container button:focus {
+  button:hover,
+  button:focus {
     cursor: pointer;
     color: #52a77f;
   }
+}
+  
+

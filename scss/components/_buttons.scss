@@ -1,44 +1,39 @@
 /*---------------------- BUTTONS -----------------------------*/
 
 /* BUTTON GENERAL STYLE */
-.button--outlined {
-  @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
-  transition: all 0.3 ease 0s;
+
+.button {
+  &--outlined {
+    @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
+    transition: all 0.3 ease 0s;
+  }
+  &--gradient {
+    @include generalButton(9px 25px, 10px, none, 50px, #46afa7);
+    background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%);
+  }
+  &--hamburger {
+    @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
+    transition: all 0.3 ease 0s;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  &--nomarging {
+    margin: 0;
+  }
 }
 
-.button--gradient {
-  @include generalButton(9px 25px, 10px, none, 50px, #46afa7);
-  background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%);
+.button a {
+  @include fontAndTransitionButton;
+  &:hover {
+    @include hoverButton;
+  }
 }
-
-/* Botón de menu de hamburguesa */
-.button--hamburger {
-  @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
-  transition: all 0.3 ease 0s;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.button--nomarging {
-  margin: 0;
-}
-
-/* BUTTON ANIMATION */
-.button a,
-.navbar__button a {
-  transition: all 0.3 ease 0s;
-}
-
-.button a:hover,
-.navbar__button a:hover {
-  background: #ccf7c1;
-  color: #0a0913;
-}
-
-/* BUTTON TEXT */
-.button a,
-.navbar__button a {
-  @include fontWeightAndSize(400,16px);
-  text-decoration: none;
+.navbar {
+  &__button a {
+    @include fontAndTransitionButton;
+    &:hover {
+      @include hoverButton;
+    }
+  }
 }

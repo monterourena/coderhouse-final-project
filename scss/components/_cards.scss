@@ -2,24 +2,23 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px 30px;
+  &--three-columns {
+    display: grid;
+    grid-template-areas: "one two" "three three";
+    gap: 50px 50px;
+  }
 }
 
-.tiles__cards--three-columns {
-  display: grid;
-  grid-template-areas: "one two" "three three";
-  gap: 50px 50px;
-}
-
-.tile-card--one {
-  grid-area: one;
-}
-
-.tile-card--two {
-  grid-area: two;
-}
-
-.tile-card--three {
-  grid-area: three;
+.tile-card {
+  &--one {
+    grid-area: one;
+  }
+  &--two {
+    grid-area: two;
+  }
+  &--three {
+    grid-area: three;
+  }
 }
 
 .card {
@@ -34,35 +33,33 @@
     "one two"
     "three three";
   gap: 2em 2em;
+
+  &__item {
+    background-color: rgba(209, 209, 209, 0.1);
+    padding: 1em 3em;
+    border-radius: 1em;
+    &--one {
+      grid-area: one;
+    }
+    &--two {
+      grid-area: two;
+    }
+    &--three {
+      grid-area: three;
+    }
+    &--cost {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom: 1px solid white;
+    }
+  }
 }
 
-.pricing-cards__item {
-  background-color: rgba(209, 209, 209, 0.1);
-  padding: 1em 3em;
-  border-radius: 1em;
-}
-
-.pricing-cards__item--one {
-  grid-area: one;
-}
-
-.pricing-cards__item--two {
-  grid-area: two;
-}
-
-.pricing-cards__item--three {
-  grid-area: three;
-}
-
-.pricing-cards__item--cost {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid white;
-}
-
-.item-cost__child {
-  align-self: center;
-  margin: 0 10px 50px 0px;
+.item-cost {
+  &__child {
+    align-self: center;
+    margin: 0 10px 50px 0px;
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -78,15 +75,14 @@
       "three";
     gap: 2em 2em;
   }
-  .tiles__cards--three-columns {
-    display: grid;
-    grid-template-areas: "one" "two" "three";
-    gap: 50px 50px;
-  }
-
   .tiles__cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px 30px;
+    &--three-columns {
+      display: grid;
+      grid-template-areas: "one" "two" "three";
+      gap: 50px 50px;
+    }
   }
 }
