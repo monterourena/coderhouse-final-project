@@ -1,0 +1,14 @@
+@mixin fontWeightAndSize($font-weight, $font-size) {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+@mixin generalButton($padding, $margin, $border, $borderradius, $background){
+  padding: $padding;
+  margin: $margin;
+  border: $border;
+  border-radius: $borderradius;
+  background: $background;
+}

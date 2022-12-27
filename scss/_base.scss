@@ -1,4 +1,5 @@
-/* Reseteo de los estilos por defecto */
+/* MAIN RESET */
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -45,39 +46,24 @@ body {
 /* TEXT */
 /* Conjunto de estilos para textos */
 .title {
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
+  @include fontWeightAndSize(700, 50px);
 }
 
 .subtitle {
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
+  @include fontWeightAndSize(400, 40px);
 }
 
 .subsubtitle {
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  @include fontWeightAndSize(400, 20px);
 }
 
 .description {
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
+  @include fontWeightAndSize(300, 20px);
   text-justify: inter-word;
 }
 
 .note {
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  @include fontWeightAndSize(300, 18px);
   text-justify: inter-word;
 }
 
@@ -165,31 +151,5 @@ body {
 
   .note {
     font-size: 12px;
-  }
-  /* Spacing */
-  .margin-horizontal-6 {
-    margin-left: 40%;
-    margin-right: 40%;
-  }
-  .margin-horizontal-5 {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .margin-horizontal-4 {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
-  .margin-horizontal-3 {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
-
-  .margin-horizontal-2 {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
-  .margin-horizontal-1 {
-    margin-left: 6%;
-    margin-right: 6%;
   }
 }

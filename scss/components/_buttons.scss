@@ -2,30 +2,18 @@
 
 /* BUTTON GENERAL STYLE */
 .button--outlined {
-  padding: 9px 25px;
-  margin: 10px;
-  border: 1px solid white;
-  background: transparent;
-  border-radius: 50px;
+  @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
   transition: all 0.3 ease 0s;
 }
 
 .button--gradient {
-  padding: 9px 25px;
-  background: #46afa7;
+  @include generalButton(9px 25px, 10px, none, 50px, #46afa7);
   background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%);
-  margin: 10px;
-  border: none;
-  border-radius: 50px;
 }
 
 /* Botón de menu de hamburguesa */
 .button--hamburger {
-  padding: 9px 25px;
-  margin: 10px;
-  border: 1px solid white;
-  background: transparent;
-  border-radius: 50px;
+  @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
   transition: all 0.3 ease 0s;
   display: flex;
   align-items: center;
@@ -51,9 +39,6 @@
 /* BUTTON TEXT */
 .button a,
 .navbar__button a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #edf0f1;
+  @include fontWeightAndSize(400,16px);
   text-decoration: none;
 }

@@ -52,11 +52,8 @@
 }
 
 .footer-links__list li a {
+  @include fontWeightAndSize(300, 18px);
   text-decoration: none;
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
   transition: all 0.3 ease 0s;
 }
 
