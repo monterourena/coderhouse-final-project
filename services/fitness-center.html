@@ -5,63 +5,49 @@
     <meta http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Befit - Fitness Center Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="body--bg">
-    <header class="header">
-
-      <!-- Inicio del navigation bar -->
-      <nav class="navbar" id="navigation_bar">
-        <!-- Inicio de la sección del logo -->
-        <div class="navbar__logo">
-          <a href="../index.html">
-            <img
-              class="navbar__logo--img"
-              src="../assets/navbar-logo.png"
-              alt="befit-logo"
-            />
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 mt-3">
+      <div class="container">
+          <a href="../index.html" class="brand-logo navbar-brand mb-0 h1"> 
+              <img class="d-inline-block align-top" 
+              src="../assets/navbar-logo.png" alt="Befit-logo" width="80"/>
           </a>
-        </div>
-        <!-- Fin de la sección del logo -->
-
-
-        <!-- Inicio de la sección de los links -->
-        <div class="navbar__links">
-          <ul class="navbar__links--list">
-            <li>
-              <a href="./fitness-center.html"> Fitness Center </a>
-            </li>
-            <li>
-              <a href="./personal-trainer.html"> Personal Trainer </a>
-            </li>
-            <li>
-              <a href="./nutrition-coach.html"> Nutrition Coach </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Fin de la sección de los links -->
-
-
-        <!-- Inicio de la sección de los botones Call To Action -->
-        <div class="navbar__button">
-          <a class="button--outlined" href="../pricing.html">Pricing</a>
-          <a class="button--gradient" href="../about-us.html">About us</a>
-        </div>
-        <!-- Fin de la sección de los botones Call To Action -->
-
-        <!-- Inicio del Hamburger Menu -->
-        <div class="navbar__button--hamburger">
-          <button class="button--hamburger" href="../index.html"><span class="material-icons-outlined hamburger-icon">menu</span></button>
-        </div>
-        <!-- Fin del Hamburger Menu -->
-
-      </nav>
-      <!-- Fin del navigation bar -->
-
-    </header>
+          <button class="navbar-toggler button--hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item active">
+                      <a href="./fitness-center.html" class="nav-link active"> Fitness Center </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a href="./personal-trainer.html" class="nav-link"> Personal Trainer </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a href="./nutrition-coach.html" class="nav-link"> Nutrition Coach </a>
+                  </li>
+              </ul>
+              <!-- Inicio de la sección de los botones Call To Action -->
+              <div class="navbar__button ">
+                  <a class="button--outlinedNav mb-4" href="../pricing.html">Pricing</a>
+                  <a class="button--gradientNav mb-4" href="../about-us.html">About us</a>
+              </div>
+              <!-- Fin de la sección de los botones Call To Action -->
+          </div>
+      </div>
+    </nav>
 
     <section class="hero--fitness-center">
       <div class="hero_slider--inverted margin-top-2 margin-bottom-2 margin-horizontal-2">
@@ -136,7 +122,7 @@
     </section>
 
     <footer class="footer margin-top-5">
-      <div class="footer-navigation margin-top-3">
+      <div class="footer-navigation">
         <a href="../index.html">
           <img class="tiny" src="../assets/navbar-logo.png" alt="befit-logo" />
         </a>
@@ -174,5 +160,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   </body>
 </html>

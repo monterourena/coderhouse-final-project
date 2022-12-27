@@ -2,6 +2,10 @@
 
 /* Clases para definir tamaños máximos de imágenes */
 
+.brand-logo{
+  min-width: 270px;
+}
+
 .tiny {
   width: 80%;
   max-width: 100px;
@@ -78,6 +82,10 @@ $horizontalMarginValues: (
 /* ------------------------------------------------------------------ */
 
 @media only screen and (max-width: 768px) {
+  .brand-logo{
+    min-width: auto;
+  }
+
   .margin-top-4 {
     margin-top: 50px;
   }
