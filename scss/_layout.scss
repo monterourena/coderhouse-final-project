@@ -1,0 +1,130 @@
+/* IMAGES & SIZES */
+
+/* Clases para definir tamaños máximos de imágenes */
+
+.brand-logo{
+  min-width: 270px;
+}
+
+.tiny {
+  width: 80%;
+  max-width: 100px;
+}
+
+.extra-small {
+  width: 80%;
+  max-width: 200px;
+}
+.small {
+  width: 80%;
+  max-width: 500px;
+}
+.medium {
+  width: 80%;
+  max-width: 100%;
+}
+.large {
+  width: 80%;
+  max-width: 1000px;
+}
+.extra-large {
+  width: 80%;
+  max-width: 1500px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.rounded-corners {
+  border-radius: 3em;
+}
+
+/*Spacing*/
+/* Definición de clases para margenes superiores, inferiores y laterales */
+
+$verticalMarginValues: (
+  1: 10px,
+  2: 24px,
+  3: 50px,
+  4: 100px,
+  5: 200px,
+  6: 400px,
+);
+
+$horizontalMarginValues: (
+  1: 5%,
+  2: 10%,
+  3: 20%,
+  4: 24%,
+  5: 40%,
+  6: 50%,
+);
+
+@each $classNumber, $value in $verticalMarginValues {
+  .margin-bottom-#{$classNumber} {
+    margin-bottom: $value;
+  }
+  .margin-top-#{$classNumber} {
+    margin-top: $value;
+  }
+}
+
+@each $classNumber, $value in $horizontalMarginValues {
+  .margin-horizontal-#{$classNumber} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+  .brand-logo{
+    min-width: auto;
+  }
+
+  .margin-top-4 {
+    margin-top: 50px;
+  }
+
+  $horizontalMarginValues: (
+    1: 2%,
+    2: 8%,
+    3: 8%,
+    4: 12%,
+    5: 24%,
+    6: 42%,
+  );
+
+  @each $classNumber, $value in $horizontalMarginValues {
+    .margin-horizontal-#{$classNumber} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY MOBILE ------------------------ */
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 576px) {
+  $horizontalMarginValues: (
+    1: 6%,
+    2: 6%,
+    3: 6%,
+    4: 6%,
+    5: 20%,
+    6: 40%,
+  );
+
+  @each $classNumber, $value in $horizontalMarginValues {
+    .margin-horizontal-#{$classNumber} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/*---------------------- BUTTONS -----------------------------*/
+
+/* BUTTON GENERAL STYLE */
+
+.button {
+  &--outlined,
+  &--outlinedNav {
+    @include generalButton(9px 25px, 10px, 1px solid white, 50px, transparent);
+    white-space: nowrap;
+    transition: all 0.3 ease 0s;
+  }
+  &--gradient, 
+  &--gradientNav{
+    @include generalButton(9px 25px, 10px, none, 50px, #46afa7);
+    white-space: nowrap;
+    background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%);
+  }
+  &--hamburger {
+    @include generalButton(3px 15px, 10px, 1px solid rgb(155, 153, 153), 50px, transparent);
+    transition: all 0.3 ease 0s;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  &--nomarging {
+    margin: 0;
+  }
+}
+
+.button a {
+  @include fontAndTransitionButton;
+  &:hover {
+    @include hoverButton;
+  }
+}
+.navbar {
+  &__button a {
+    @include fontAndTransitionButton;
+    &:hover {
+      @include hoverButton;
+    }
+  }
+}

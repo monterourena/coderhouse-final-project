@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #252525;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #252525;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2f8a82;
+  border-radius: 100px;
+}
+
+
+
+@mixin fontWeightAndSize($font-weight, $font-size) {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+@mixin generalButton($padding, $margin, $border, $borderradius, $background){
+  padding: $padding;
+  margin: $margin;
+  border: $border;
+  border-radius: $borderradius;
+  background: $background;
+}
+
+@mixin fontAndTransitionButton{
+  transition: all 0.3 ease 0s;
+  @include fontWeightAndSize(400,16px);
+  text-decoration: none;
+}
+
+@mixin hoverButton{
+  background: #ccf7c1;
+  color: #0a0913;
+}

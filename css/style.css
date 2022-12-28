@@ -1,0 +1,613 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #252525; }
+
+::-webkit-scrollbar-track {
+  background-color: #252525;
+  border-radius: 100px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #2f8a82;
+  border-radius: 100px; }
+
+/* MAIN RESET */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #090811; }
+
+/* BODY BACKGROUND */
+.body--bg {
+  z-index: 1;
+  background: linear-gradient(-45deg, #040e1f, #090811, #041103, #03180d, #030f02, #090811, #040e1f);
+  background-size: 300%, 300%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 20s ease infinite;
+  background-attachment: fixed; }
+
+/* BACKGROUND ANIMATION*/
+/* Animación del fondo degradado: Hace que el degradado se desplace por el fondo */
+@keyframes animate {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+/* TEXT */
+/* Conjunto de estilos para textos */
+.title {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px; }
+
+.subtitle {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px; }
+
+.subsubtitle {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px; }
+
+.description {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-justify: inter-word; }
+
+.note {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-justify: inter-word; }
+
+/* HIGHLIGHT: Es una clase especial para dar importancia a algunas palabras en textos */
+.highlight {
+  white-space: nowrap;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 0px 20px;
+  background-image: linear-gradient(90deg, #115751 0%, #2f8a82 10%, #2b8366 35%, #8aeec0 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: highlight-animation-rev 0.5s ease forwards; }
+
+/* Esta clase posee un efecto cuando el mouse se pone por encima y cuando se quita */
+.highlight:hover {
+  animation: highlight-animation 0.5s ease-in forwards; }
+
+@keyframes highlight-animation {
+  0% {
+    background-size: 100%; }
+  80% {
+    background-size: 650%; }
+  100% {
+    background-size: 650%; } }
+
+@keyframes highlight-animation-rev {
+  0% {
+    background-size: 650%; }
+  40% {
+    background-size: 650%; }
+  100% {
+    background-size: 100%; } }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 768px) {
+  .subtitle {
+    text-align: center; } }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY MOBILE ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: 44px; }
+  .subtitle {
+    font-size: 34px; }
+  .subsubtitle {
+    font-size: 16px; }
+  .description {
+    font-size: 16px; }
+  .note {
+    font-size: 12px; } }
+
+/*---------------------- BUTTONS -----------------------------*/
+/* BUTTON GENERAL STYLE */
+.button--outlined, .button--outlinedNav {
+  padding: 9px 25px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: transparent;
+  white-space: nowrap;
+  transition: all 0.3 ease 0s; }
+
+.button--gradient, .button--gradientNav {
+  padding: 9px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  background: #46afa7;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #2f8a82 0%, #2b8366 35%, #52a77f 100%); }
+
+.button--hamburger {
+  padding: 3px 15px;
+  margin: 10px;
+  border: 1px solid #9b9999;
+  border-radius: 50px;
+  background: transparent;
+  transition: all 0.3 ease 0s;
+  display: flex;
+  align-items: center;
+  color: white; }
+
+.button--nomarging {
+  margin: 0; }
+
+.button a {
+  transition: all 0.3 ease 0s;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none; }
+  .button a:hover {
+    background: #ccf7c1;
+    color: #0a0913; }
+
+.navbar__button a {
+  transition: all 0.3 ease 0s;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none; }
+  .navbar__button a:hover {
+    background: #ccf7c1;
+    color: #0a0913; }
+
+.tiles__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 30px; }
+  .tiles__cards--three-columns {
+    display: grid;
+    grid-template-areas: "one two" "three three";
+    gap: 50px 50px; }
+
+.tile-card--one {
+  grid-area: one; }
+
+.tile-card--two {
+  grid-area: two; }
+
+.tile-card--three {
+  grid-area: three; }
+
+.card {
+  background-color: rgba(209, 209, 209, 0.1);
+  padding: 1em 3em;
+  border-radius: 1em; }
+
+.pricing-cards {
+  display: grid;
+  grid-template-areas: "one two" "three three";
+  gap: 2em 2em; }
+  .pricing-cards__item {
+    background-color: rgba(209, 209, 209, 0.1);
+    padding: 1em 3em;
+    border-radius: 1em; }
+    .pricing-cards__item--one {
+      grid-area: one; }
+    .pricing-cards__item--two {
+      grid-area: two; }
+    .pricing-cards__item--three {
+      grid-area: three; }
+    .pricing-cards__item--cost {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom: 1px solid white; }
+
+.item-cost__child {
+  align-self: center;
+  margin: 0 10px 50px 0px; }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 768px) {
+  .pricing-cards {
+    display: grid;
+    grid-template-areas: "one" "two" "three";
+    gap: 2em 2em; }
+  .tiles__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 30px; }
+    .tiles__cards--three-columns {
+      display: grid;
+      grid-template-areas: "one" "two" "three";
+      gap: 50px 50px; } }
+
+/*---------------------- FAQs -----------------------------*/
+.faq-container .faq__item {
+  background-color: rgba(73, 78, 76, 0.5);
+  border-radius: 20px;
+  padding: 0px 50px;
+  margin: 20px 0px; }
+
+.faq-container button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #edf0f1;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none; }
+
+.faq-container button:hover,
+.faq-container button:focus {
+  cursor: pointer;
+  color: #52a77f; }
+
+.faq-link {
+  color: white; }
+
+.accordion-item,
+.accordion-item .accordion-button,
+.accordion-item:first-of-type,
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:last-of-type,
+.accordion-item:last-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button.collapsed {
+  color: #edf0f1;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(73, 78, 76, 0.5);
+  box-shadow: none; }
+
+.accordion-item:not(.collapsed),
+.accordion-button:not(.collapsed) {
+  background-color: rgba(73, 78, 76, 0.5); }
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+
+/*---------------------- FOOTER & CTA -----------------------------*/
+.CTA_form {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(209, 209, 209, 0.1);
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px; }
+
+input[type="email"] {
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer; }
+  input[type="email"]::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */ }
+
+input[type="email"]:focus {
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer; }
+
+input[type="submit"] {
+  background-color: rgba(208, 214, 212, 0.5);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; }
+
+.footer {
+  padding: 60px 60px;
+  background-color: rgba(73, 78, 76, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+  .footer-navigation {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 250px; }
+    .footer-navigation ul {
+      padding: 0px; }
+  .footer-links__list li {
+    list-style: none;
+    margin: 10px 0px; }
+    .footer-links__list li a {
+      color: #edf0f1;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      text-decoration: none;
+      transition: all 0.3 ease 0s; }
+    .footer-links__list li a:hover {
+      color: #ccf7c1; }
+
+.nav-link:hover {
+  color: #ccf7c1; }
+
+.form_text--button,
+.form_text--email {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+@media (max-width: 991.98px) {
+  input[type="email"]::placeholder {
+    text-align: center; }
+  .footer-title {
+    text-align: center; } }
+
+/* Estilo de los botones y espacios del footer */
+/*---------------------- HERO -----------------------------*/
+.hero_slider,
+.hero_slider--inverted {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.slider_child--image {
+  display: flex;
+  justify-content: center; }
+
+.hero__placeholder {
+  display: flex;
+  justify-content: center; }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 768px) {
+  .hero_slider {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    flex-wrap: wrap; }
+    .hero_slider--inverted {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 2fr;
+      align-items: center;
+      flex-wrap: wrap; }
+  .slider_child {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .slider_child .title {
+      text-align: center; }
+    .slider_child .description {
+      text-align: center; } }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY MOBILE ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 576px) {
+  .hero_slider {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+    flex-wrap: wrap; }
+    .hero_slider--inverted {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 2fr;
+      align-items: center;
+      flex-wrap: wrap; } }
+
+@media screen and (max-width: 990px) {
+  .button--outlinedNav {
+    display: block;
+    text-align: center;
+    padding: 9px;
+    margin: 0px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background: transparent; }
+  .button--gradientNav {
+    display: block;
+    text-align: center;
+    padding: 9px;
+    margin: 0px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background: transparent; }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none; }
+  .nav-item {
+    text-align: center; } }
+
+/* IMAGES & SIZES */
+/* Clases para definir tamaños máximos de imágenes */
+.brand-logo {
+  min-width: 270px; }
+
+.tiny {
+  width: 80%;
+  max-width: 100px; }
+
+.extra-small {
+  width: 80%;
+  max-width: 200px; }
+
+.small {
+  width: 80%;
+  max-width: 500px; }
+
+.medium {
+  width: 80%;
+  max-width: 100%; }
+
+.large {
+  width: 80%;
+  max-width: 1000px; }
+
+.extra-large {
+  width: 80%;
+  max-width: 1500px; }
+
+.centered {
+  text-align: center; }
+
+.rounded-corners {
+  border-radius: 3em; }
+
+/*Spacing*/
+/* Definición de clases para margenes superiores, inferiores y laterales */
+.margin-bottom-1 {
+  margin-bottom: 10px; }
+
+.margin-top-1 {
+  margin-top: 10px; }
+
+.margin-bottom-2 {
+  margin-bottom: 24px; }
+
+.margin-top-2 {
+  margin-top: 24px; }
+
+.margin-bottom-3 {
+  margin-bottom: 50px; }
+
+.margin-top-3 {
+  margin-top: 50px; }
+
+.margin-bottom-4 {
+  margin-bottom: 100px; }
+
+.margin-top-4 {
+  margin-top: 100px; }
+
+.margin-bottom-5 {
+  margin-bottom: 200px; }
+
+.margin-top-5 {
+  margin-top: 200px; }
+
+.margin-bottom-6 {
+  margin-bottom: 400px; }
+
+.margin-top-6 {
+  margin-top: 400px; }
+
+.margin-horizontal-1 {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.margin-horizontal-2 {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.margin-horizontal-3 {
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.margin-horizontal-4 {
+  margin-left: 24%;
+  margin-right: 24%; }
+
+.margin-horizontal-5 {
+  margin-left: 40%;
+  margin-right: 40%; }
+
+.margin-horizontal-6 {
+  margin-left: 50%;
+  margin-right: 50%; }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 768px) {
+  .brand-logo {
+    min-width: auto; }
+  .margin-top-4 {
+    margin-top: 50px; }
+  .margin-horizontal-1 {
+    margin-left: 2%;
+    margin-right: 2%; }
+  .margin-horizontal-2 {
+    margin-left: 8%;
+    margin-right: 8%; }
+  .margin-horizontal-3 {
+    margin-left: 8%;
+    margin-right: 8%; }
+  .margin-horizontal-4 {
+    margin-left: 12%;
+    margin-right: 12%; }
+  .margin-horizontal-5 {
+    margin-left: 24%;
+    margin-right: 24%; }
+  .margin-horizontal-6 {
+    margin-left: 42%;
+    margin-right: 42%; } }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY MOBILE ------------------------ */
+/* ------------------------------------------------------------------ */
+@media only screen and (max-width: 576px) {
+  .margin-horizontal-1 {
+    margin-left: 6%;
+    margin-right: 6%; }
+  .margin-horizontal-2 {
+    margin-left: 6%;
+    margin-right: 6%; }
+  .margin-horizontal-3 {
+    margin-left: 6%;
+    margin-right: 6%; }
+  .margin-horizontal-4 {
+    margin-left: 6%;
+    margin-right: 6%; }
+  .margin-horizontal-5 {
+    margin-left: 20%;
+    margin-right: 20%; }
+  .margin-horizontal-6 {
+    margin-left: 40%;
+    margin-right: 40%; } }
+
+/* GOOGLE FONTS */

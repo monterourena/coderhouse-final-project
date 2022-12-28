@@ -1,0 +1,24 @@
+@media screen and (max-width:990px){
+    .button {
+        &--outlinedNav {
+            display: block;
+            text-align: center;
+            @include generalButton(9px, 0px, 1px solid white, 50px, transparent);
+        }
+        &--gradientNav{
+            display: block;
+            text-align: center;
+            @include generalButton(9px, 0px, 1px solid white, 50px, transparent);
+
+        }
+      }
+   
+    .navbar-toggler:focus{
+      outline: none;
+      box-shadow: none;
+    }
+    .nav-item{
+      text-align: center;
+    }
+}
+
