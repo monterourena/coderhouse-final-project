@@ -272,6 +272,29 @@ body {
   cursor: pointer;
   color: #52a77f; }
 
+.faq-link {
+  color: white; }
+
+.accordion-item,
+.accordion-item .accordion-button,
+.accordion-item:first-of-type,
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:last-of-type,
+.accordion-item:last-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button.collapsed {
+  color: #edf0f1;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(73, 78, 76, 0.5);
+  box-shadow: none; }
+
+.accordion-item:not(.collapsed),
+.accordion-button:not(.collapsed) {
+  background-color: rgba(73, 78, 76, 0.5); }
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+
 /*---------------------- FOOTER & CTA -----------------------------*/
 .CTA_form {
   display: flex;
@@ -280,18 +303,36 @@ body {
   justify-content: center;
   border-radius: 20px;
   padding: 20px; }
-  .CTA_form input[type="email"] {
-    background-color: transparent;
-    padding: 12px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer; }
-  .CTA_form input[type="submit"] {
-    background-color: rgba(208, 214, 212, 0.5);
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px; }
+
+input[type="email"] {
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer; }
+  input[type="email"]::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */ }
+
+input[type="email"]:focus {
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer; }
+
+input[type="submit"] {
+  background-color: rgba(208, 214, 212, 0.5);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; }
 
 .footer {
   padding: 60px 60px;
@@ -321,7 +362,9 @@ body {
     .footer-links__list li a:hover {
       color: #ccf7c1; }
 
-/* Estilo de los botones y espacios del footer */
+.nav-link:hover {
+  color: #ccf7c1; }
+
 .form_text--button,
 .form_text--email {
   color: #edf0f1;
@@ -329,6 +372,16 @@ body {
   font-weight: 300;
   font-size: 16px; }
 
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+@media (max-width: 991.98px) {
+  input[type="email"]::placeholder {
+    text-align: center; }
+  .footer-title {
+    text-align: center; } }
+
+/* Estilo de los botones y espacios del footer */
 /*---------------------- HERO -----------------------------*/
 .hero_slider,
 .hero_slider--inverted {

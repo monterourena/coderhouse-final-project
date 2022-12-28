@@ -7,23 +7,45 @@
   justify-content: center;
   border-radius: 20px;
   padding: 20px;
+}
 
-  input[type="email"] {
-    background-color: transparent;
-    padding: 12px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
+input[type="email"] {
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 
-  input[type="submit"] {
-    background-color: rgba(208, 214, 212, 0.5);
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
   }
 }
+
+input[type="email"]:focus {
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+
+input[type="submit"] {
+  background-color: rgba(208, 214, 212, 0.5);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+
+
 
 .footer {
   padding: 60px 60px;
@@ -57,3 +79,32 @@
     }
   }
 }
+
+
+.nav-link:hover{
+  color: #ccf7c1;
+}
+
+
+.form_text--button,
+.form_text--email {
+  @include fontWeightAndSize(300, 16px);
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- MEDIA QUERY TABLET ------------------------ */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 991.98px) { 
+  input[type="email"] {
+    &::placeholder {
+    text-align: center;
+    }
+  }
+  .footer-title{
+    text-align: center;
+  } 
+}
+
+

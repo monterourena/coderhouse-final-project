@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Befit - Solutions for helthcare professionals</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -17,44 +22,60 @@
   <body class="body--bg">
     <nav class="navbar navbar-expand-lg navbar-dark mb-5 mt-3">
       <div class="container">
-          <a href="./index.html" class="brand-logo navbar-brand mb-0 h1"> 
-              <img class="d-inline-block align-top" 
-              src="./assets/navbar-logo.png" alt="Befit-logo" width="80"/>
-          </a>
-          <button class="navbar-toggler button--hamburger"
+        <a href="./index.html" class="brand-logo navbar-brand mb-0 h1">
+          <img
+            class="d-inline-block align-top"
+            src="./assets/navbar-logo.png"
+            alt="Befit-logo"
+            width="80"
+          />
+        </a>
+        <button
+          class="navbar-toggler button--hamburger"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item active">
-                      <a href="./services/fitness-center.html" class="nav-link"> Fitness Center </a>
-                  </li>
-                  <li class="nav-item active">
-                      <a href="./services/personal-trainer.html" class="nav-link"> Personal Trainer </a>
-                  </li>
-                  <li class="nav-item active">
-                      <a href="./services/nutrition-coach.html" class="nav-link"> Nutrition Coach </a>
-                  </li>
-              </ul>
-              <!-- Inicio de la sección de los botones Call To Action -->
-              <div class="navbar__button ">
-                  <a class="button--outlinedNav mb-4" href="./pricing.html">Pricing</a>
-                  <a class="button--gradientNav mb-4" href="./about-us.html">About us</a>
-              </div>
-              <!-- Fin de la sección de los botones Call To Action -->
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a href="./services/fitness-center.html" class="nav-link">
+                Fitness Center
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="./services/personal-trainer.html" class="nav-link">
+                Personal Trainer
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="./services/nutrition-coach.html" class="nav-link">
+                Nutrition Coach
+              </a>
+            </li>
+          </ul>
+          <!-- Inicio de la sección de los botones Call To Action -->
+          <div class="navbar__button">
+            <a class="button--outlinedNav mb-4" href="./pricing.html"
+              >Pricing</a
+            >
+            <a class="button--gradientNav mb-4" href="./about-us.html"
+              >About us</a
+            >
           </div>
+          <!-- Fin de la sección de los botones Call To Action -->
+        </div>
       </div>
     </nav>
 
     <main>
       <!-- Inicio de sección 1 -->
-      <section class="hero--main">
+      <section class="hero--main" id="Home">
         <!-- Titulo Principal -->
         <p
           class="title centered margin-top-2 margin-bottom-2 margin-horizontal-4"
@@ -76,7 +97,10 @@
         </p>
 
         <!-- Botón CTA -->
-        <div class="button centered margin-top-3 margin-bottom-2" data-aos="fade-up">
+        <div
+          class="button centered margin-top-3 margin-bottom-2"
+          data-aos="fade-up"
+        >
           <a class="button--gradient" href="./pricing.html">Join us</a>
         </div>
 
@@ -197,7 +221,7 @@
       <!-- Fin de sección 3 -->
 
       <!-- Inicio de sección de preguntas frecuentes -->
-      <section class="faq margin-horizontal-3">
+      <section class="faq margin-horizontal-3" id="FAQs">
         <!-- Título Principal -->
         <p
           class="title centered margin-top-4 margin-bottom-2 margin-horizontal-3"
@@ -205,56 +229,127 @@
           FAQs
         </p>
 
-        <!-- Inicio de Lista de preguntas -->
-        <div class="faq-container">
-          <!-- Inicio de Pregunta -->
-          <div class="faq__item">
-            <button id="faq__item--button-0" aria-expanded="false">
-              <span class="faq__item--title">
-                What is a custom branded application?</span
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed subsubtitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
               >
-              <span class="icon"></span>
-            </button>
-          </div>
-          <!-- Fin de Pregunta -->
+                What is a custom branded application?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-5 note">
+                A custom branded application is a specialized software that is
+                designed and developed for a specific company or brand. In the
+                case of a health professional, such as trainers, nutritionists,
+                and gyms, a custom branded application can be a valuable tool
+                for managing client information, scheduling appointments, and
+                tracking progress. <br /><br />
 
-          <!-- Pregunta -->
-          <div class="faq__item">
-            <button id="faq__item--button-1" aria-expanded="false">
-              <span class="faq__item--title">
-                How much does this app cost?</span
-              >
-              <span class="icon"></span>
-            </button>
+                By having a personalized and branded app, professionals in the
+                health industry can provide a more streamlined and efficient
+                service to their clients, while also building brand recognition
+                and loyalty. In addition, a custom branded app can help
+                professionals to stand out in a competitive market and establish
+                themselves as leaders in their field.
+              </div>
+            </div>
           </div>
-          <!-- Fin de Pregunta -->
 
-          <!-- Pregunta -->
-          <div class="faq__item">
-            <button id="faq__item--button-2" aria-expanded="false">
-              <span class="faq__item--title">
-                What does the service includes?</span
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed subsubtitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
               >
-              <span class="icon"></span>
-            </button>
-          </div>
-          <!-- Fin de Pregunta -->
+                What is the cost of our custom branded app?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-5 note">
+                If you're looking to stand out in the crowded world of health
+                professionals, a white label custom branded application is the
+                way to go! And the best part? White label custom branded apps
+                are more affordable than you might think.
 
-          <!-- Inicio de Pregunta -->
-          <div class="faq__item">
-            <button id="faq__item--button-3" aria-expanded="false">
-              <span class="faq__item--title">
-                Is it available on iOS and Android?</span
-              >
-              <span class="icon"></span>
-            </button>
+                <br /><br />
+
+                From managing client information to scheduling appointments and
+                tracking progress, a white label custom branded app can help you
+                streamline your services and establish yourself as a leader in
+                your field without breaking the bank. So, what about pricing for
+                your users? There are a few options to consider. You can offer a
+                one-time purchase price, a subscription fee for access to
+                certain features or updates, or even additional in-app purchases
+                or premium content. 
+                <br /><br />
+                Want to see exactly how much a white label custom branded app
+                will cost you? Check out our
+                <a class="faq-link" href="./pricing.html">pricing</a> section
+                for all the details!
+              </div>
+            </div>
           </div>
-          <!-- Fin de Pregunta -->
+
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed subsubtitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Is our custom branded app available on iOS and Android?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-5 note">
+                Do you want to make sure you can access our custom branded app
+                no matter what kind of phone you have? No problem! Our app is
+                available on both iOS and Android, so you can take advantage of
+                all the features and functionality no matter what kind of device
+                you're using. So don't worry about being
+                limited by your device – with Befit's custom branded app, you
+                can take control of your health and wellness services from
+                anywhere. 
+                <br><br>
+                Get started with Befit's custom branded app today
+                and start streamlining your services and building your brand
+                recognition!
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Finde Lista de preguntas -->
 
         <!-- Inicio de Botón CTA -->
-        <div class="button centered margin-top-3 margin-bottom-2">
+        <div class="button centered margin-top-3 margin-bottom-4">
           <a class="button--outlined" href="./about-us.html">Learn more</a>
         </div>
         <!-- Fin de Botón CTA -->
@@ -262,49 +357,66 @@
       <!-- Fin de sección de preguntas frecuentes -->
     </main>
 
+    
     <!-- Inicio del Footer -->
-    <footer class="footer margin-top-5">
-      <div class="footer-navigation">
-        <a href="./index.html">
-          <img class="tiny" src="./assets/navbar-logo.png" alt="befit-logo" />
-        </a>
+    <div class="container border-top">
+      <footer class="py-5">
+        <div class="row  mt-2">
+          <div class="col-6 col-md-2 mb-3">
+            <p class="footer-title subsubtitle">Solution</p>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#Home" class="nav-link p-0 note">Befit</a></li>
+              <li class="nav-item mb-2"><a href="./pricing.html" class="nav-link p-0 note">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="./about-us.html" class="nav-link p-0 note">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <p class="footer-title subsubtitle">Services</p>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./services/fitness-center.html" class="nav-link p-0 note">Fitness Center</a></li>
+              <li class="nav-item mb-2"><a href="./services/personal-trainer.html" class="nav-link p-0 note">Personal Trainer</a></li>
+              <li class="nav-item mb-2"><a href="./services/nutrition-coach.html" class="nav-link p-0 note">Nutrition Coach</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <p class="footer-title subsubtitle">Subscribe to our newsletter</p>
+              <p class="footer-title note">Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input
+                  id="newsletter1"
+                  class="form_text--email form-control"
+                  type="email"
+                  id="email_form"
+                  placeholder="Enter your email here"
+                />
+                <input class="form_text--button" type="submit" value="Subscribe" />
+              </div>
+            </form>
+          </div>
+        </div>
 
-        <ul class="footer-links__list">
-          <li class="footer-links__item centered">
-            <a href="./services/fitness-center.html">Fitness Center</a>
-          </li>
-          <li class="footer-links__item centered">
-            <a href="./services/personal-trainer.html">Personal Trainer</a>
-          </li>
-          <li class="footer-links__item centered">
-            <a href="./services/nutrition-coach.html">Nutrition Coach</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-CTA">
-        <p class="subtitle centered">
-          Don't miss any news <span class="highlight">about our services</span>
-        </p>
-
-        <form class="CTA_form margin-bottom-3" action="">
-          <input
-            class="form_text--email"
-            type="email"
-            id="email_form"
-            placeholder="Enter your email here"
-          />
-          <input class="form_text--button" type="submit" value="Subscribe" />
-        </form>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <!-- Fin del Footer -->
+    
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

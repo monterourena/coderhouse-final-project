@@ -49,7 +49,7 @@
       </div>
     </nav>
 
-    <section class="hero--fitness-center">
+    <section class="hero--fitness-center" id="Home">
       <div class="hero_slider margin-top-2 margin-bottom-2 margin-horizontal-2">
         <div class="slider_child margin-horizontal-1" data-aos="fade-right">
           <p class="title margin-top-2">
@@ -80,41 +80,50 @@
       </div>
     </section>
 
-    <footer class="footer margin-top-5">
-      <div class="footer-navigation">
-        <a href="../index.html">
-          <img class="tiny" src="../assets/navbar-logo.png" alt="befit-logo" />
-        </a>
+    <!-- Inicio del Footer -->
+    <div class="container border-top mt-5">
+      <footer class="py-5">
+        <div class="row  mt-2">
+          <div class="col-6 col-md-2 mb-3">
+            <p class="footer-title subsubtitle">Solution</p>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 note">Befit</a></li>
+              <li class="nav-item mb-2"><a href="../pricing.html" class="nav-link p-0 note">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="../about-us.html" class="nav-link p-0 note">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <p class="footer-title subsubtitle">Services</p>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./fitness-center.html" class="nav-link p-0 note">Fitness Center</a></li>
+              <li class="nav-item mb-2"><a href="./personal-trainer.html" class="nav-link p-0 note">Personal Trainer</a></li>
+              <li class="nav-item mb-2"><a href="./nutrition-coach.html" class="nav-link p-0 note">Nutrition Coach</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <p class="footer-title subsubtitle">Subscribe to our newsletter</p>
+              <p class="footer-title note">Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input
+                  id="newsletter1"
+                  class="form_text--email form-control"
+                  type="email"
+                  id="email_form"
+                  placeholder="Enter your email here"
+                />
+                <input class="form_text--button" type="submit" value="Subscribe" />
+              </div>
+            </form>
+          </div>
+        </div>
 
-        <ul class="footer-links__list">
-          <li class="footer-links__item centered">
-            <a href="./fitness-center.html">Fitness Center</a>
-          </li>
-          <li class="footer-links__item centered">
-            <a href="./personal-trainer.html">Personal Trainer</a>
-          </li>
-          <li class="footer-links__item centered">
-            <a href="./nutrition-coach.html">Nutrition Coach</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-CTA">
-        <p class="subtitle centered">
-          Don't miss any news <span class="highlight">about our services</span>
-        </p>
-
-        <form class="CTA_form margin-bottom-3" action="">
-          <input
-            class="form_text--email"
-            type="email"
-            id="email_form"
-            placeholder="Enter your email here"
-          />
-          <input class="form_text--button" type="submit" value="Subscribe" />
-        </form>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <!-- Fin del Footer -->
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
