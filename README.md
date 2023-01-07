@@ -6,4 +6,4 @@ This project consisted of the creation of a web site using mostly Vanilla HTML a
 ![image](https://user-images.githubusercontent.com/117543842/202369117-4fe3d558-e863-4794-9337-be188571121d.png)
 
 ### Demo available at:
-[befit.monterourena.com](befit.monterourena.com)
+[befit.monterourena.com](https://befit.monterourena.com)
